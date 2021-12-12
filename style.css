@@ -1,0 +1,181 @@
+body{
+
+    padding: 0 2px;
+    margin: 0;
+    background-color: rgba(62, 107, 124, 0.815);
+
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+nav {
+    display: flex; 
+    /* flex permet de tout alligner */
+    flex-wrap: wrap;
+    justify-content: space-between; /*permet de mettre un espace entre les éléments */
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav .profil{
+    display: flex;
+    align-items: center;
+}
+nav .profil img{
+    width: 63px;
+    height: 63px;
+    border-radius: 50px;
+
+}
+
+nav .profil h1{
+    font-size: 20px;
+    margin-left: 12px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+nav ul li{
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+
+}
+nav ul li:hover{
+    border-bottom-color: black;
+}
+
+@media screen and (max-width:700px){
+    nav{
+    justify-content: center;
+}
+
+  page .présentation{
+      margin-top: 15%;
+
+  }
+  .page .présentation .scolaires .scolaire{
+      margin-right: 0;
+      margin-bottom: 20px;
+      max-width: 100%;
+  }
+footer{
+    justify-content: flex-start;/*permet comme vu précédemment de mettre un espace ici particulièrement au début*/
+}
+footer .colonne{
+    width: 80%;
+}
+}
+.page{
+    margin: 7px;
+
+}
+.page header{
+    margin-top: 5%;
+    max-width: 80%;
+
+}
+.page header h1 {
+    margin:0;
+    text-transform: uppercase;/*permet de mettre le texte tout en majuscule*/
+    font-size: 6vw;/*vw est une unité pour la taille*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.page .presentation-image {
+
+    margin-top: 5%;
+}
+.page .presentation-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page .présentation{
+    margin-top: 6%;
+}
+.page .présentation h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    font-size: 3vw;
+
+}
+.page .présentation .scolaires{
+    display: flex;
+    flex-wrap: wrap;/*permet d'indiquer que l'élément doit retourner a la ligne*/
+
+
+}
+.page .présentation .scolaires .scolaire{
+    max-width: 195px;
+    margin-right: 20px;
+
+}
+.page .présentation .football {
+    max-width: 50%;
+    font-size: 17px;
+}
+.page .présentation .projet {
+    max-width: 50%;
+    font-size: 17px;
+}
+.page .présentation .ing {
+    max-width: 50%;
+    font-size: 17px;
+}
+
+.page .présentation .scolaires .scolaire h4 {
+    margin: 0;
+}
+.page .présentation .scolaires .scolaire .description {
+    font-size: 10 px;
+
+}
+.page .présentation .scolaires .scolaire .dates{
+    font-size: 13px;
+    color: rgb(77, 50, 50);
+}
+footer{
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap; /* permet  pas passer a la ligne suivante si les éléments ne rentre pas*/
+    justify-content: space-around;/*mettre de l'espace*/
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 0%;
+}
+footer .colonne a{
+    text-decoration: none;/*pour effacer les liens*/
+
+}
+footer .colonne p{
+    font-size: 12px;
+    color:#ccc;
+    cursor: pointer;
+}
+footer .colonne p:hover{
+    color:white;
+
+}
+footer .colonne img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.Compétences h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 2px;
+    margin-top: 4px;
+    font-size: 3vw;
+
+    
+
+}
+.section .présentation p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 33px;
+}
